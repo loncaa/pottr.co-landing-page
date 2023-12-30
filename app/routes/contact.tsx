@@ -4,8 +4,8 @@ import Header from "~/components/Header";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Pottr.co - Contact" },
+    { name: "description", content: "Send us a message" },
   ];
 };
 

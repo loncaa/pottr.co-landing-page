@@ -5,8 +5,8 @@ import Team from "~/components/Team";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Pottr.co - About" },
+    { name: "description", content: "Get us know better" },
   ];
 };
 

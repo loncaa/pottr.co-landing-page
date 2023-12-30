@@ -5,12 +5,15 @@ import HeroHorizontal from "~/components/HeroHorizontal";
 import LogoCloud from "~/components/LogoCloud";
 import SectionWrapper from "~/components/SectionWrapper";
 import Showcase from "~/components/Showcase";
-import ShowcaseItem from "~/components/ShowcaseItem";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Pottr.co - Home" },
+    {
+      name: "description",
+      content:
+        "A small digital agency for Shopify integrations and custom app development",
+    },
   ];
 };
 
