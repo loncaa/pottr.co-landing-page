@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export default function HeroHorizontal() {
   return (
     <div className="relative max-w-7xl px-5 mx-auto grid grid-rows-1 lg:grid-cols-2 gap-3">
@@ -10,12 +12,12 @@ export default function HeroHorizontal() {
           technologies are not listed here? It's not a problem, we can do it!
         </h4>
         <div className="hidden lg:flex justify-center gap-3 mt-10 lg:justify-start">
-          <a
+          <Link
             className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600 hid"
-            href={"#"}
+            to={"/contact"}
           >
             <span>contact us &nbsp; → </span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="items-center space-x-6 lg:space-x-8 col-span-1">
@@ -58,12 +60,12 @@ export default function HeroHorizontal() {
           />
         </div>
         <div className="flex justify-center gap-3 mt-10 lg:justify-start lg:hidden">
-          <a
+          <Link
             className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600"
-            href={"#"}
+            to={"/contact"}
           >
-            <span>Contact us &nbsp; → </span>
-          </a>
+            <span>contact us &nbsp; → </span>
+          </Link>
         </div>
       </div>
     </div>

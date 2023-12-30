@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export default function Hero() {
   return (
     <div className="relative bg-white my-5 md:my-20">
@@ -15,12 +17,12 @@ export default function Hero() {
                   do it!
                 </h4>
                 <div className="lg:flex justify-center gap-3 mt-3 lg:justify-start">
-                  <a
+                  <Link
                     className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600 hid"
-                    href={"#"}
+                    to={"/contact"}
                   >
-                    <span>Contact us &nbsp; → </span>
-                  </a>
+                    <span>contact us &nbsp; → </span>
+                  </Link>
                 </div>
               </div>
             </div>
