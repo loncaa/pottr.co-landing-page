@@ -8,11 +8,11 @@ import Showcase from "~/components/Showcase";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - Home" },
+    { title: "Pottr.co - Digital agency" },
     {
       name: "description",
       content:
-        "A small digital agency for Shopify integrations and custom app development",
+        "A small digital agency for Shopify integration and custom app development",
     },
   ];
 };

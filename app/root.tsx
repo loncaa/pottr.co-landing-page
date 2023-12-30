@@ -26,7 +26,7 @@ export default function App() {
         <meta property="og:title" content="Pottr.co - Digital agency" />
         <meta
           property="og:description"
-          content="A small digital agency for Shopify integrations and custom app development"
+          content="A small digital agency for Shopify integration and custom app development"
         />
         <meta property="og:image" content="https://pottr.co/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@ export default function App() {
         <meta name="twitter:title" content="Pottr.co - Digital agency" />
         <meta
           name="twitter:description"
-          content="A small digital agency for Shopify integrations and custom app development"
+          content="A small digital agency for Shopify integration and custom app development"
         />
         <meta name="twitter:image" content="https://pottr.co/preview.png" />
         <Meta />
