@@ -3,14 +3,14 @@ import { Link } from "@remix-run/react";
 const people = [
   {
     name: "Antonio Loncar",
-    role: "Founder",
+    role: "Founder & CTO",
     email: "antonio@pottr.co",
     linkedinUrl: "https://www.linkedin.com/in/antonio-loncar",
     imageUrl: "/aloncar.jpg",
   },
   {
     name: "Katarina Tokic",
-    role: "Intern UI/UX designer",
+    role: "UI/UX designer intern",
     email: "antonio@pottr.co",
     linkedinUrl: "https://www.linkedin.com/in/katarina-tokic/",
     imageUrl: "/ktokic.jpg",
@@ -29,13 +29,13 @@ export default function Team() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Meet our team
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          </h1>
+          <h4 className="mt-6 text-lg leading-8 text-gray-600">
             Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
             elementum enim vitae ullamcorper suspendisse.
-          </p>
+          </h4>
         </div>
         <ul
           role="list"
@@ -43,32 +43,36 @@ export default function Team() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <div className="flex items-center gap-x-6">
-                <img
-                  className="h-16 w-16 rounded-full"
-                  src={person.imageUrl}
-                  alt=""
-                />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    {person.name}
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    {person.role}
-                  </p>
-                  {person.linkedinUrl && (
-                    <p className="mt-1 truncate text-xs leading-5 text-gray-500">
-                      <Link to={person.linkedinUrl}>
+              <Link
+                to={person.linkedinUrl || "#"}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="flex items-center gap-x-6">
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    src={person.imageUrl}
+                    alt=""
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                      {person.name}
+                    </h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                      {person.role}
+                    </p>
+                    {person.linkedinUrl && (
+                      <p className="mt-1 truncate text-xs leading-5 text-gray-500">
                         {
                           person.linkedinUrl.split(
                             "https://www.linkedin.com/"
                           )[1]
                         }
-                      </Link>
-                    </p>
-                  )}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
+              </Link>
             </li>
           ))}
         </ul>
