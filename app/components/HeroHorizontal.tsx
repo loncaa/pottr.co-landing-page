@@ -1,20 +1,20 @@
 export default function HeroHorizontal() {
   return (
-    <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-rows-1 lg:grid-cols-2 gap-3">
+    <div className="relative max-w-7xl px-5 mx-auto grid grid-rows-1 lg:grid-cols-2 gap-3">
       <div className="col-span-1 text-center lg:text-start m-auto lg:m-0">
-        <p className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl">
           Technologies
-        </p>
-        <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
+        </h1>
+        <h4 className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
           This are main technologies used in our projects. Some of your
           technologies are not listed here? It's not a problem, we can do it!
-        </p>
+        </h4>
         <div className="hidden lg:flex justify-center gap-3 mt-10 lg:justify-start">
           <a
             className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600 hid"
             href={"#"}
           >
-            <span>Contact us &nbsp; → </span>
+            <span>contact us &nbsp; → </span>
           </a>
         </div>
       </div>

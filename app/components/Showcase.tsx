@@ -3,7 +3,7 @@ import ShowcaseItem from "./ShowcaseItem";
 export default function Showcase() {
   return (
     <div className="relative items-center w-full px-5 mx-auto max-w-7xl">
-      <h3 className="text-lg font-semibold tracking-tight text-[#FF4F01] sm:text-lg mb-2 text-center md:text-left">
+      <h3 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
         services
       </h3>
       <div className="relative flex-col items-start m-auto align-middle grid grid-cols-1 md:grid-cols-2 gap-8">
