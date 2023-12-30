@@ -18,9 +18,14 @@ export default function Header() {
 
       <div className="max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center">
         <div className="text-center py-4 space-x-4">
-          <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-[#FF4F01] border  hover:border-white  translate-y-1 text-white hover:text-[#16161d] hover:bg-[#fffe98] text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
-            <span> contact</span>
-          </button>
+          <Link to={"/contact"}>
+            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-[#FF4F01] border  hover:border-white  translate-y-1 text-white hover:text-[#16161d] hover:bg-[#fffe98] text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
+              <span>
+                {" "}
+                {location.pathname == "/contact" ? "contact 🚀" : "contact"}
+              </span>
+            </button>
+          </Link>
 
           <Link to={location.pathname == "/about" ? "/" : "/about"}>
             <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#E2E8F0] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
