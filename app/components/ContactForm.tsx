@@ -18,7 +18,7 @@ export default function ContactForm() {
                   required={true}
                   id="project-type"
                   name="project-type"
-                  className="block w-full bg-white rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 sm:max-w-xs"
+                  className="block w-full bg-white border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6 sm:max-w-xs"
                 >
                   <option selected>Choose a gig type</option>
                   <option value={"Create an custom Shopify app"}>
@@ -52,7 +52,7 @@ export default function ContactForm() {
                   name="name"
                   id="name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  className="block w-full border border-[#16161d]py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6 focus:border-[#FF4F01] focus:outline-none focus:ring-0"
                 />
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function ContactForm() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  className="block w-full border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function ContactForm() {
                   type="text"
                   name="budget"
                   id="budget"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  className="block w-full border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function ContactForm() {
                   id="message"
                   rows={3}
                   defaultValue={""}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  className="block w-full border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>

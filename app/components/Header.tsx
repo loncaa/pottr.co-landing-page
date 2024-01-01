@@ -21,22 +21,25 @@ export default function Header() {
       <div className="max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center">
         <div className="text-center py-4 space-x-4">
           <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-[#FF4F01] border  hover:border-[#fffe98]  translate-y-1 text-white hover:text-[#16161d] hover:bg-neutral-200 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
+            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01]  hover:border-[#FF4F01] translate-y-1 text-[#FF4F01] hover:bg-neutral-200  text-lg py-1 px-4 inline-flex items-center">
               <span>
                 {" "}
-                {location.pathname == "/contact" ? "home" : "contact"}
+                {location.pathname == "/contact" ? "! contact" : "contact"}
               </span>
             </button>
           </Link>
 
           <Link to={location.pathname == "/about" ? "/" : "/about"}>
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#E2E8F0] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
-              <span> {location.pathname == "/about" ? "home" : "about"}</span>
+            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#16161d] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg py-1 px-4  inline-flex items-center">
+              <span>
+                {" "}
+                {location.pathname == "/about" ? "! about" : "about"}
+              </span>
             </button>
           </Link>
 
           <Link to="#">
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#E2E8F0] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
+            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#16161d] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg  py-1 px-4  inline-flex items-center">
               <span> use cases</span>
             </button>
           </Link>
