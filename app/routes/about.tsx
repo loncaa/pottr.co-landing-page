@@ -21,21 +21,19 @@ export default function Index() {
       <Header />
       <BodyContent>
         <SectionWrapper>
-          <div className="gap-x-8 gap-y-20 lg:px-8 xl:grid-cols-3">
-            <div className="max-w-2xl">
-              <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
-                about us
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                With a passion for e-commerce excellence and a track record of 8
-                years in Node.js mastery, we stand at the intersection of
-                technology and business strategy. From creating game-changing
-                Shopify solutions to fueling startup dreams with Node.js
-                expertise, our journey is defined by collaboration, creativity,
-                and client success. Join us as we turn ideas into reality and
-                businesses into digital triumphs.
-              </p>
-            </div>
+          <div className="gap-x-8 gap-y-20 xl:grid-cols-3 m-auto ">
+            <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
+              about us
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              With a passion for e-commerce excellence and a track record of 8
+              years in Node.js mastery, we stand at the intersection of
+              technology and business strategy. From creating game-changing
+              Shopify solutions to fueling startup dreams with Node.js
+              expertise, our journey is defined by collaboration, creativity,
+              and client success. Join us as we turn ideas into reality and
+              businesses into digital triumphs.
+            </p>
           </div>
         </SectionWrapper>
 

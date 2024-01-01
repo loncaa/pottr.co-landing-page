@@ -21,7 +21,7 @@ export default function Contact() {
       <Header />
       <BodyContent>
         <SectionWrapper>
-          <div className="relative items-center flex-col m-auto align-middle bg-white">
+          <div className="relative items-center flex-col m-auto align-middle">
             <div className="gap-x-8 grid grid-cols-1 lg:grid-cols-2">
               <div className="col-span-1">
                 <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
