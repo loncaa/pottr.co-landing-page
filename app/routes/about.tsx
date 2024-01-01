@@ -21,7 +21,7 @@ export default function Index() {
       <Header />
       <BodyContent>
         <SectionWrapper>
-          <div className="gap-x-8 gap-y-20 xl:grid-cols-3 m-auto ">
+          <div className="gap-x-8 gap-y-20 m-auto">
             <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
               about us
             </h1>

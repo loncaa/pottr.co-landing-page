@@ -4,7 +4,7 @@ import Header from "~/components/Header";
 import HeroHorizontal from "~/components/HeroHorizontal";
 import LogoCloud from "~/components/LogoCloud";
 import SectionWrapper from "~/components/SectionWrapper";
-import Showcase from "~/components/Showcase";
+import Services from "~/components/Services";
 
 export const meta: MetaFunction = () => {
   return [
@@ -28,7 +28,7 @@ export default function Index() {
 
       <BodyContent>
         <SectionWrapper>
-          <Showcase />
+          <Services />
         </SectionWrapper>
 
         <SectionWrapper>
