@@ -9,7 +9,7 @@ export default function ShowcaseItem({
   heroLinkUrl,
 }: ShowcaseItemProps) {
   return (
-    <div className="relative items-center m-auto lg:inline-flex md:order-first">
+    <div className="relative items-center lg:inline-flex md:order-first">
       <div className="text-center md:text-left">
         <div>
           <h1 className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl min-h-24">

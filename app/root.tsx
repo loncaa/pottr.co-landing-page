@@ -1,5 +1,5 @@
 import type { LinksFunction } from "@remix-run/cloudflare";
-import stylesheet from "./tailwind.css";
+import stylesheet from "~/tailwind.css";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import {
   Links,

@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
+import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
 
 export const meta: MetaFunction = () => {
@@ -10,52 +11,40 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+function BodyContent({ children }) {
+  return <section className="sm:px-28">{children}</section>;
+}
+
 export default function Index() {
   return (
-    <div>
-      <section>
-        <Header />
-      </section>
-      <div className="text-left">
-        <div className="sm:px-28">
-          <section className="relative flex items-center w-full">
-            <div className="relative items-center w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
-              <div className="relative flex-col items-start m-auto align-middle">
-                <div className="bg-white py-4 sm:py-6">
-                  <div className="mx-auto  gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-                    <div className="max-w-2xl">
-                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Mission
-                      </h2>
-                      <p className="mt-6 text-lg leading-8 text-gray-600">
-                        We are a multidisciplinary team from Croatia, and our
-                        mission is to provide the best possible service to our
-                        clients. With multiple years of experience in IT and
-                        backend development, we are eligible to attack a whole
-                        spectrum of problems.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <>
+      <Header />
+      <BodyContent>
+        <SectionWrapper>
+          <div className="gap-x-8 gap-y-20 lg:px-8 xl:grid-cols-3">
+            <div className="max-w-2xl">
+              <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
+                about us
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                With a passion for e-commerce excellence and a track record of 8
+                years in Node.js mastery, we stand at the intersection of
+                technology and business strategy. From creating game-changing
+                Shopify solutions to fueling startup dreams with Node.js
+                expertise, our journey is defined by collaboration, creativity,
+                and client success. Join us as we turn ideas into reality and
+                businesses into digital triumphs.
+              </p>
             </div>
-          </section>
-        </div>
-      </div>
+          </div>
+        </SectionWrapper>
 
-      <div className="text-left">
-        <div className="sm:px-28">
-          <section className="relative flex items-center w-full">
-            <div className="relative items-center w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
-              <div className="relative flex-col items-start m-auto align-middle">
-                <Team />
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+        <SectionWrapper>
+          <Team />
+        </SectionWrapper>
+      </BodyContent>
 
       <Footer />
-    </div>
+    </>
   );
 }

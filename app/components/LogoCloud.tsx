@@ -1,6 +1,6 @@
 export default function LogoCloud() {
   return (
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="">
       <h2 className="font-semibold tracking-tight text-[#FF4F01] text-2xl mb-2 md:mb-5 text-center">
         trusted by
       </h2>
