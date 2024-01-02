@@ -3,7 +3,14 @@ import { Link, useLocation } from "@remix-run/react";
 export default function Header() {
   const location = useLocation();
 
-  console.log(location.pathname);
+  const buttonCss =
+    "backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01] text-[#FF4F01] hover:bg-neutral-200 hover:border-[#FF4F01] translate-y-1 text-lg py-1 px-4 inline-flex items-center";
+  const selectedButtonCss =
+    "backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01] bg-[#FF4F01] text-white translate-y-1 text-lg py-1 px-4 inline-flex items-center";
+
+  const getButtonCss = (uri: string) => {
+    return location.pathname == uri ? selectedButtonCss : buttonCss;
+  };
 
   return (
     <section className="sticky pb-6">
@@ -21,25 +28,20 @@ export default function Header() {
       <div className="max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center">
         <div className="text-center py-4 space-x-4">
           <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01]  hover:border-[#FF4F01] translate-y-1 text-[#FF4F01] hover:bg-neutral-200  text-lg py-1 px-4 inline-flex items-center">
-              <span>
-                {" "}
-                {location.pathname == "/contact" ? "! contact" : "contact"}
-              </span>
+            <button className={getButtonCss("/contact")}>
+              <span> contact</span>
             </button>
           </Link>
 
           <Link to={location.pathname == "/about" ? "/" : "/about"}>
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#16161d] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg py-1 px-4  inline-flex items-center">
-              <span>
-                {" "}
-                {location.pathname == "/about" ? "! about" : "about"}
-              </span>
+            <button className={getButtonCss("/about")}>
+              {" "}
+              <span>about</span>
             </button>
           </Link>
 
           <Link to="#">
-            <button className="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#16161d] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg  py-1 px-4  inline-flex items-center">
+            <button className={getButtonCss("/use-cases")}>
               <span> use cases</span>
             </button>
           </Link>
