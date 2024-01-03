@@ -6,7 +6,7 @@ export default function Header() {
   const buttonCss =
     "backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01] text-[#FF4F01] hover:bg-neutral-200 hover:border-[#FF4F01] translate-y-1 text-lg py-1 px-4 inline-flex items-center";
   const selectedButtonCss =
-    "backdrop-blur-sm transition duration-500 ease-in-out bg-transparent border border-[#FF4F01] bg-[#FF4F01] text-white translate-y-1 text-lg py-1 px-4 inline-flex items-center";
+    "backdrop-blur-sm transition duration-500 ease-in-out border border-[#FF4F01] bg-[#FF4F01] text-white translate-y-1 text-lg py-1 px-4 inline-flex items-center";
 
   const getButtonCss = (uri: string) => {
     return location.pathname == uri ? selectedButtonCss : buttonCss;
