@@ -3,19 +3,33 @@ import BodyContent from "~/components/BodyContent";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
-import Team from "~/components/Team";
+
+const usecases = [
+  {
+    name: "Lokot App",
+    use: "",
+    url: "https://lokot.app",
+    description: "https://www.linkedin.com/in/antonio-loncar",
+  },
+  {
+    name: "PhishAR",
+    url: "https://phishar.com",
+    description: "https://www.linkedin.com/in/antonio-loncar",
+  },
+];
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - About" },
-    { name: "description", content: "Get us know better" },
+    { title: "Pottr.co - Use cases" },
+    { name: "description", content: "Uses cases" },
   ];
 };
 
-export default function Index() {
+export default function Usecases() {
   return (
-    <>
+    <div>
       <Header />
+
       <BodyContent>
         <SectionWrapper>
           <div className="gap-x-8 gap-y-20 m-auto">
@@ -33,13 +47,9 @@ export default function Index() {
             </p>
           </div>
         </SectionWrapper>
-
-        <SectionWrapper>
-          <Team />
-        </SectionWrapper>
       </BodyContent>
 
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
+import BodyContent from "~/components/BodyContent";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import HeroHorizontal from "~/components/HeroHorizontal";
@@ -16,10 +17,6 @@ export const meta: MetaFunction = () => {
     },
   ];
 };
-
-function BodyContent({ children }) {
-  return <section className="sm:px-28">{children}</section>;
-}
 
 export default function Index() {
   return (

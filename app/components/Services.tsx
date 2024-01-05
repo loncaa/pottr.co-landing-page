@@ -12,7 +12,7 @@ export default function Services() {
           description="
           Boost your e-commerce store with our tailor-made Shopify apps and extensions.
           Improve your customer experience with tempting upsells and gift with purchase extensions."
-          heroLinkUrl="#"
+          heroLinkUrl="/custom-shopify-apps-usecases"
         />
         <ShowcaseItem
           title="Shopify custom Integration Development"
@@ -21,7 +21,7 @@ export default function Services() {
           Going custom ensures your customers get what they want. 
           And you get the features you need.
           "
-          heroLinkUrl="#"
+          heroLinkUrl="/custom-shopify-integrations-usecases"
         />
         <ShowcaseItem
           title="Node.js Backend Development"
@@ -29,7 +29,7 @@ export default function Services() {
           Let us help you create MVPs, built strong architecture, or offer guidance for success.
           Let's build, grow, and disrupt the market collaboratively! 
           "
-          heroLinkUrl="#"
+          heroLinkUrl="/nodejs-usecases"
         />
       </div>
     </div>

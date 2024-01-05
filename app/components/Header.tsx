@@ -7,7 +7,7 @@ const selectedButtonCss =
   "backdrop-blur-sm transition duration-500 ease-in-out translate-y-1 text-lg py-1 px-4 inline-flex items-center border border-[#FF4F01] bg-[#FF4F01] text-white ";
 
 const navbarCss =
-  "max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center bg-white";
+  "max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center bg-white md:shadow-none";
 
 export default function Header() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -51,8 +51,8 @@ export default function Header() {
           </button>
         </Link>
 
-        <Link to="#">
-          <button className={getButtonCss("/use-cases")}>
+        <Link to={location.pathname == "/usecases" ? "/" : "/usecases"}>
+          <button className={getButtonCss("/usecases")}>
             <span> use cases</span>
           </button>
         </Link>
@@ -84,7 +84,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`fixed top-0 w-full z-50 ${navbarCss} ${
+        className={`fixed top-0 w-full z-50 shadow-sm ${navbarCss} ${
           !isHeaderVisible ? "visible md:invisible" : "invisible"
         }`}
       >
