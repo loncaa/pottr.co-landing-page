@@ -20,7 +20,9 @@ export default function ContactForm() {
                   name="project-type"
                   className="block w-full bg-white border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6 sm:max-w-xs"
                 >
-                  <option selected>Choose a gig type</option>
+                  <option selected disabled={true} value={""}>
+                    Choose a gig type
+                  </option>
                   <option value={"Create an custom Shopify app"}>
                     Create an custom Shopify app
                   </option>
