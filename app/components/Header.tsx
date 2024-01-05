@@ -35,6 +35,31 @@ export default function Header() {
     return location.pathname == uri ? selectedButtonCss : buttonCss;
   };
 
+  const HeaderButtons = () => {
+    return (
+      <div className="text-center py-4 space-x-4">
+        <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
+          <button className={getButtonCss("/contact")}>
+            <span> contact</span>
+          </button>
+        </Link>
+
+        <Link to={location.pathname == "/about" ? "/" : "/about"}>
+          <button className={getButtonCss("/about")}>
+            {" "}
+            <span>about</span>
+          </button>
+        </Link>
+
+        <Link to="#">
+          <button className={getButtonCss("/use-cases")}>
+            <span> use cases</span>
+          </button>
+        </Link>
+      </div>
+    );
+  };
+
   return (
     <section className="pb-6">
       <div
@@ -51,55 +76,19 @@ export default function Header() {
         </span>
       </div>
       <div
-        className={`${navbarCss} ${isHeaderVisible ? "visible" : "invisible"}`}
+        className={`${navbarCss} ${
+          isHeaderVisible ? "visible" : "invisible md:visible"
+        }`}
       >
-        <div className="text-center py-4 space-x-4">
-          <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
-            <button className={getButtonCss("/contact")}>
-              <span> contact</span>
-            </button>
-          </Link>
-
-          <Link to={location.pathname == "/about" ? "/" : "/about"}>
-            <button className={getButtonCss("/about")}>
-              {" "}
-              <span>about</span>
-            </button>
-          </Link>
-
-          <Link to="#">
-            <button className={getButtonCss("/use-cases")}>
-              <span> use cases</span>
-            </button>
-          </Link>
-        </div>
+        <HeaderButtons />
       </div>
 
       <div
         className={`fixed top-0 w-full z-50 ${navbarCss} ${
-          !isHeaderVisible ? "visible" : "invisible"
+          !isHeaderVisible ? "visible md:invisible" : "invisible"
         }`}
       >
-        <div className="text-center py-4 space-x-4">
-          <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
-            <button className={getButtonCss("/contact")}>
-              <span> contact</span>
-            </button>
-          </Link>
-
-          <Link to={location.pathname == "/about" ? "/" : "/about"}>
-            <button className={getButtonCss("/about")}>
-              {" "}
-              <span>about</span>
-            </button>
-          </Link>
-
-          <Link to="#">
-            <button className={getButtonCss("/use-cases")}>
-              <span> use cases</span>
-            </button>
-          </Link>
-        </div>
+        <HeaderButtons />
       </div>
     </section>
   );
