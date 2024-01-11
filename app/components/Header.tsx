@@ -50,12 +50,6 @@ export default function Header() {
             <span>about</span>
           </button>
         </Link>
-
-        <Link to={location.pathname == "/usecases" ? "/" : "/usecases"}>
-          <button className={getButtonCss("/usecases")}>
-            <span> use cases</span>
-          </button>
-        </Link>
       </div>
     );
   };

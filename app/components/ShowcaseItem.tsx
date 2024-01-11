@@ -19,14 +19,6 @@ export default function ShowcaseItem({
             {description}
           </h4>
         </div>
-        <div className="flex justify-center gap-3 mt-4 md:mt-10 lg:justify-start">
-          <a
-            className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600"
-            href={heroLinkUrl}
-          >
-            <span> use case &nbsp; → </span>
-          </a>
-        </div>
       </div>
     </div>
   );
