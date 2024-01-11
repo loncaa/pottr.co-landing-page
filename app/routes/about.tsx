@@ -22,15 +22,13 @@ export default function Index() {
             <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
               about us
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              With a passion for e-commerce excellence and a track record of 8
-              years in Node.js mastery, we stand at the intersection of
-              technology and business strategy. From creating game-changing
-              Shopify solutions to fueling startup dreams with Node.js
-              expertise, our journey is defined by collaboration, creativity,
-              and client success. Join us as we turn ideas into reality and
-              businesses into digital triumphs.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <p className="mt-6 text-lg leading-8 text-gray-600 col-span-1">
+                We are a small team of creative problem-solvers, who are
+                specialized in delivering custom software solutions. Our
+                experience is built on a e-commerce solutions, and in startups.
+              </p>
+            </div>
           </div>
         </SectionWrapper>
 
