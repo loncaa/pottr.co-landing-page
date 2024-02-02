@@ -32,7 +32,7 @@ export default function Services() {
           heroLinkUrl="/nodejs-usecases"
         />
         <ShowcaseItem
-          title="Custom UI/UX Design"
+          title="Custom UI/UX Design and Research"
           description="
           We are a small, agile team that can iterate solutions faster than our bigger competitors.
           Our specialization is in solving complex design problems.

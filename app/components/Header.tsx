@@ -1,3 +1,4 @@
+import { HomeIcon } from "@heroicons/react/16/solid";
 import { Link, useLocation } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
 
@@ -38,6 +39,14 @@ export default function Header() {
   const HeaderButtons = () => {
     return (
       <div className="text-center py-4 space-x-4">
+        <Link to={"/"}>
+          <button className={`${getButtonCss("/")}`}>
+            <span>
+              <HomeIcon className="w-6 inline" />
+            </span>
+          </button>
+        </Link>
+
         <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
           <button className={getButtonCss("/contact")}>
             <span> contact</span>
