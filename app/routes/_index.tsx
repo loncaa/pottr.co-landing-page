@@ -29,11 +29,11 @@ export default function Index() {
         </SectionWrapper>
 
         <SectionWrapper>
-          <HeroHorizontal />
+          <LogoCloud />
         </SectionWrapper>
 
         <SectionWrapper>
-          <LogoCloud />
+          <HeroHorizontal />
         </SectionWrapper>
 
         <Footer />
