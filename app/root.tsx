@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/cloudflare";
+import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import stylesheet from "~/tailwind.css";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import {
@@ -8,14 +8,45 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  json,
+  useLoaderData,
+  useLocation,
 } from "@remix-run/react";
+import { useEffect } from "react";
+import * as gtag from "./utils/gtag.client";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
   { rel: "stylesheet", href: stylesheet },
 ];
 
+// Load the GA tracking id from the .env
+export const loader = async ({ context }: LoaderFunctionArgs) => {
+  return json({
+    ENV: {
+      gaTrackingId: context.env.GA_TRACKING_ID,
+      isDevelopment: context.env.NODE_ENV === "development",
+    },
+  });
+};
+
 export default function App() {
+  const { ENV } = useLoaderData<typeof loader>();
+  const { isDevelopment, gaTrackingId } = ENV;
+  const location = useLocation();
+
+  useEffect(() => {
+    if (gaTrackingId?.length) {
+      gtag.pageview(location.pathname, gaTrackingId);
+    }
+  }, [location, gaTrackingId]);
+
+  useEffect(() => {
+    if (isDevelopment) {
+      console.log("DEV ENV");
+    }
+  }, [isDevelopment]);
+
   return (
     <html lang="en">
       <head>
@@ -41,6 +72,28 @@ export default function App() {
         <Links />
       </head>
       <body>
+        {isDevelopment || !gaTrackingId ? null : (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+            ></script>
+            <script
+              async
+              id="gtag-init"
+              dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${gaTrackingId}');
+                `,
+              }}
+            />
+          </>
+        )}
+
         <Outlet />
         <ScrollRestoration />
         <Scripts />
