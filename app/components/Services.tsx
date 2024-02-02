@@ -3,41 +3,32 @@ import ShowcaseItem from "./ShowcaseItem";
 export default function Services() {
   return (
     <div className="relative items-center w-full">
-      <h3 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
+      <h2 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
         services
-      </h3>
+      </h2>
       <div className="relative flex-col items-start m-auto align-middle grid grid-cols-1 md:grid-cols-2 gap-12">
         <ShowcaseItem
-          title="Shopify custom App Design & Development"
+          title="Shopify Custom App Design & Development"
           description="
-          Boost your e-commerce store with our tailor-made Shopify apps and extensions.
-          Improve your customer experience with tempting upsells and gift with purchase extensions."
+          Tailor-made Shopify apps and extensions, designed to look pixel-perfect every time. Our dedicated team is here to deliver you the ideal e-commerce experience."
           heroLinkUrl="/custom-shopify-apps-usecases"
         />
         <ShowcaseItem
-          title="Shopify custom Integration Development"
+          title="Shopify Custom Integration Development"
           description="
-          Your app should suit your business, not the other way around. 
-          Going custom ensures your customers get what they want. 
-          And you get the features you need.
-          "
+          Custom Shopify integrations, created and integrated into your store by seasoned experts. We'll make sure that your e-commerce ecosystem functions in complete harmony."
           heroLinkUrl="/custom-shopify-integrations-usecases"
         />
         <ShowcaseItem
-          title="Node.js Backend Development"
-          description="
-          Let us help you create MVPs, built strong architecture, or offer guidance for success.
-          Let's build, grow, and disrupt the market collaboratively! 
-          "
+          title="Custom UI/UX Research and Design"
+          description="Research and design for your e-commerce project that's tailored to your business goals. 
+          Our team is ready to validate and build a design solution to delight your customers."
           heroLinkUrl="/nodejs-usecases"
         />
         <ShowcaseItem
-          title="Custom UI/UX Design and Research"
-          description="
-          We are a small, agile team that can iterate solutions faster than our bigger competitors.
-          Our specialization is in solving complex design problems.
-          Give us a try, and we will propose a first solution in a moment.
-          "
+          title="Website Copywriting and SEO"
+          description="All-inclusive website copywriting and SEO services for your e-commerce Shopify store.
+          Let our experts guide and help craft messaging that converts customers at scale."
           heroLinkUrl="/nodejs-usecases"
         />
       </div>

@@ -74,9 +74,9 @@ export default function Header() {
             <span className="inline md:block">pottr!</span>
           </h1>
         </Link>
-        <span className="relative mt-5 bg-clip-text text-[#201515] inline-block text-2xl">
-          custom software solutions
-        </span>
+        <h1 className="relative mt-5 bg-clip-text text-[#201515] inline-block text-2xl">
+          custom e-commerce software solutions
+        </h1>
       </div>
       <div
         className={`${navbarCss} ${
