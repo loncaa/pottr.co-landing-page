@@ -25,11 +25,10 @@ export default function Contact() {
                   get in touch!
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  If you have any questions about our Shopify expertise, Node.js
-                  skills, or if you're simply interested in exploring
-                  collaboration possibilities, feel free to send us a message
-                  below. Our team of specialists is eager to bring your ideas to
-                  life. Let's create something extraordinary together!
+                  If you have questions about our expertise and skills, or if
+                  you're interested in exploring collaboration possibilities,
+                  feel free to send us a quick message. Our team of specialists
+                  is eager to bring your ideas to life.
                 </p>
                 <p></p>
               </div>

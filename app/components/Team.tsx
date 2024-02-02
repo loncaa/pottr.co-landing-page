@@ -3,7 +3,7 @@ import { Link } from "@remix-run/react";
 const people = [
   {
     name: "Antonio Loncar",
-    role: "Founder & CTO",
+    role: "Software Engineer & Founder",
     email: "antonio@pottr.co",
     linkedinUrl: "https://www.linkedin.com/in/antonio-loncar",
     imageUrl: "/aloncar.jpg",
@@ -15,6 +15,19 @@ const people = [
     linkedinUrl: "https://www.linkedin.com/in/katarina-tokic/",
     imageUrl: "/ktokic.jpg",
   },
+  {
+    name: "Branimir Hrženjak",
+    role: "Digital Marketing Specialist",
+    email: "antonio@pottr.co",
+    linkedinUrl: "https://www.linkedin.com/in/branimir-hr%C5%BEenjak-616738127",
+    imageUrl: "/branimir.jpg",
+  },
+  {
+    name: "Lucija Novak",
+    role: "UI/UX Designer",
+    email: "antonio@pottr.co",
+    imageUrl: "/lnovak.png",
+  },
 ];
 
 export default function Team() {
@@ -25,8 +38,8 @@ export default function Team() {
       </h1>
       <div className="grid gap-x-8 gap-y-10 xl:grid-cols-3 mt-6">
         <h4 className="text-lg leading-8 text-gray-600">
-          We are a multi-disciplinary team of individuals from Croatia with a
-          passion for creativity, problem solving and innovation.
+          We're a multi-disciplinary team of individuals from Croatia with a
+          passion for creativity, problem-solving, and innovation.
         </h4>
         <ul
           role="list"
