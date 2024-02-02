@@ -8,7 +8,7 @@ const selectedButtonCss =
   "backdrop-blur-sm transition duration-500 ease-in-out translate-y-1 text-lg py-1 px-4 inline-flex items-center border border-[#FF4F01] bg-[#FF4F01] text-white ";
 
 const navbarCss =
-  "max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center bg-white md:shadow-none";
+  "px-4 mx-auto text-left md:max-w-none md:text-center bg-white md:shadow-none";
 
 export default function Header() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
