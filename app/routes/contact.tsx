@@ -8,7 +8,11 @@ import SectionWrapper from "~/components/SectionWrapper";
 export const meta: MetaFunction = () => {
   return [
     { title: "Pottr.co - Contact" },
-    { name: "description", content: "Send us a message" },
+    {
+      name: "description",
+      content:
+        "Get in touch with our team of experts and let’s create something extraordinary together.",
+    },
   ];
 };
 

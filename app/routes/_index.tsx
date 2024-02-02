@@ -11,11 +11,11 @@ import TeamHero from "~/components/TeamHero";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - Digital agency" },
+    { title: "Pottr.co - Digital e-commerce agency" },
     {
       name: "description",
       content:
-        "A small digital agency for Shopify integration and custom app development",
+        "E-commerce digital agency focusing on Shopify integration and custom app development.",
     },
   ];
 };

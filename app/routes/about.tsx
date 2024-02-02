@@ -8,7 +8,11 @@ import Team from "~/components/Team";
 export const meta: MetaFunction = () => {
   return [
     { title: "Pottr.co - About" },
-    { name: "description", content: "Get us know better" },
+    {
+      name: "description",
+      content:
+        "Get to know pottr and the team of dedicated individuals working to deliver awesome software solutions.",
+    },
   ];
 };
 
