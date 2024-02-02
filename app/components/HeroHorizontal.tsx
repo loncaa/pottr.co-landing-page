@@ -3,8 +3,8 @@ import { Link } from "@remix-run/react";
 export default function HeroHorizontal() {
   return (
     <div className="relative">
-      <h3 className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl col-span-2 md:col-span-1">
-        Technologies
+      <h3 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-4 text-center md:text-left">
+        tech stack
       </h3>
       <div className="relative flex-col items-start m-auto align-middle grid grid-cols-1 md:grid-cols-2 gap-12 mt-4">
         <div className="grid gap-y-3 mt-2">
