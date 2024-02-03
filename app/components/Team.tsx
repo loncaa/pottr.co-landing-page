@@ -35,7 +35,7 @@ export default function Team() {
   return (
     <div>
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        Meet our team
+        Meet the team
       </h1>
       <div className="grid gap-x-8 gap-y-10 xl:grid-cols-3 mt-6">
         <h4 className="text-lg leading-8 text-gray-600">
