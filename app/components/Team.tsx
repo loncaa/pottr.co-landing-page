@@ -42,16 +42,14 @@ export default function Team() {
           We're a multi-disciplinary team of individuals from Croatia with a
           passion for creativity, problem-solving, and innovation.
         </h4>
-        <ul
+        <div
           role="list"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-7 xl:col-span-2"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-7 gap-x-1 xl:col-span-2"
         >
           {people.map((person) => (
-            <li key={person.name}>
-              <TeamPerson person={person} />
-            </li>
+            <TeamPerson person={person} key={person.name} />
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
