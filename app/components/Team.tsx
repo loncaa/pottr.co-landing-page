@@ -1,4 +1,3 @@
-import { Link } from "@remix-run/react";
 import TeamPerson, { TeamPersonInterface } from "./TeamPerson";
 
 export const people: TeamPersonInterface[] = [
@@ -31,17 +30,19 @@ export const people: TeamPersonInterface[] = [
   },
 ];
 
-export default function Team() {
+interface ITeamProps {
+  header: string;
+  description: string;
+}
+
+export default function Team({ header, description }: ITeamProps) {
   return (
     <div>
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        Meet the team
+        {header}
       </h1>
       <div className="grid gap-x-8 gap-y-10 xl:grid-cols-3 mt-6">
-        <h4 className="text-lg leading-8 text-gray-600">
-          We're a multi-disciplinary team of individuals from Croatia with a
-          passion for creativity, problem-solving, and innovation.
-        </h4>
+        <h4 className="text-lg leading-8 text-gray-600">{description}</h4>
         <div
           role="list"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-7 gap-x-1 xl:col-span-2"

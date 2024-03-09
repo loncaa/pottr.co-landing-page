@@ -1,4 +1,8 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import {
+  json,
+  type LoaderFunctionArgs,
+  type MetaFunction,
+} from "@remix-run/cloudflare";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import Team from "~/components/Team";
@@ -23,6 +27,11 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Node.js uses cases" },
   ];
 };
+
+export async function loader({ params }: LoaderFunctionArgs) {
+  const lang = params.lang;
+  return json({ language: lang });
+}
 
 export default function NodejsUsecases() {
   return (
@@ -65,7 +74,12 @@ export default function NodejsUsecases() {
           <section className="relative flex items-center w-full">
             <div className="relative items-center w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
               <div className="relative flex-col items-start m-auto align-middle">
-                <Team />
+                <Team
+                  header={"Meet the team"}
+                  description={
+                    "We're a multi-disciplinary team of individuals from Croatia with a passion for creativity, problem-solving, and innovation."
+                  }
+                />
               </div>
             </div>
           </section>

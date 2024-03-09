@@ -1,19 +1,28 @@
 import { Link } from "@remix-run/react";
 
-export default function HeroHorizontal() {
+interface IHeroHorizontalProps {
+  label: string;
+  header: string;
+  description: string;
+}
+
+export default function HeroHorizontal({
+  label,
+  header,
+  description,
+}: IHeroHorizontalProps) {
   return (
     <div className="relative">
       <h3 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-4 text-center md:text-left">
-        tech stack
+        {label}
       </h3>
       <h4 className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl col-span-2 md:col-span-1">
-        Technology
+        {header}
       </h4>
       <div className="relative flex-col items-start m-auto align-middle grid grid-cols-1 md:grid-cols-2 gap-12 mt-4">
         <div className="grid gap-y-3 mt-2">
           <h4 className="text-base tracking-tight text-gray-600">
-            Here are the main technologies used in our projects. Don't see your
-            technologies listed here? No problem – we've got it covered!
+            {description}
           </h4>
           <div className="flex md:mt-6 lg:justify-start">
             <Link

@@ -1,4 +1,8 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import {
+  json,
+  type LoaderFunctionArgs,
+  type MetaFunction,
+} from "@remix-run/cloudflare";
 import BodyContent from "~/components/BodyContent";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
@@ -6,7 +10,13 @@ import SectionWrapper from "~/components/SectionWrapper";
 
 const usecases = [
   {
-    name: "Aarke",
+    name: "Lokot App",
+    use: "",
+    url: "https://lokot.app",
+    description: "https://www.linkedin.com/in/antonio-loncar",
+  },
+  {
+    name: "PhishAR",
     url: "https://phishar.com",
     description: "https://www.linkedin.com/in/antonio-loncar",
   },
@@ -14,12 +24,17 @@ const usecases = [
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - Custom Shopify App Use cases" },
-    { name: "description", content: "Shopify Custom App Use cases" },
+    { title: "Pottr.co - Node.js Use cases" },
+    { name: "description", content: "Node.js Uses Cases" },
   ];
 };
 
-export default function ShopifyUsecases() {
+export async function loader({ params }: LoaderFunctionArgs) {
+  const lang = params.lang;
+  return json({ language: lang });
+}
+
+export default function NodejsUsecases() {
   return (
     <div>
       <Header />

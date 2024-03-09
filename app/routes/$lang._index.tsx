@@ -23,10 +23,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export async function loader({}: LoaderFunctionArgs) {
+export async function loader({ params }: LoaderFunctionArgs) {
+  const lang = params.lang;
+
   // fetch translations based on the language from params
 
-  return json({ language: "en" });
+  return json({ language: lang });
 }
 
 export default function Index() {

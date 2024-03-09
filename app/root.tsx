@@ -21,17 +21,21 @@ export const links: LinksFunction = () => [
 ];
 
 // Load the GA tracking id from the .env
-export const loader = async ({ context }: LoaderFunctionArgs) => {
+export const loader = async ({ context, params }: LoaderFunctionArgs) => {
+  const lang = params.lang;
+
   return json({
+    language: lang,
     ENV: {
-      gaTrackingId: context.env.GA_TRACKING_ID,
-      isDevelopment: context.env.NODE_ENV === "development",
+      gaTrackingId: context.env?.GA_TRACKING_ID,
+      isDevelopment: context.env?.NODE_ENV === "development",
     },
   });
 };
 
 export default function App() {
-  const { ENV } = useLoaderData<typeof loader>();
+  const { ENV, language } = useLoaderData<typeof loader>();
+  console.log("language", language);
   const { isDevelopment, gaTrackingId } = ENV;
   const location = useLocation();
 
