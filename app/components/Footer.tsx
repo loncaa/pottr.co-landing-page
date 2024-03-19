@@ -8,12 +8,38 @@ export default function Footer() {
           © Copyright 2024 Pottr. All rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          <li className="inline-flex text-base font-semibold text-black duration-200 focus:outline-none focus-visible:outline-gray-600">
+            <span>Language</span>
+          </li>
+          <li>
+            <Link
+              to={"https://pottr.co"}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm text-gray-600 hover:text-[#FF4F01] transition-colors duration-300"
+            >
+              English
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"https://pottr.hr"}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm text-gray-600 hover:text-[#FF4F01] transition-colors duration-300"
+            >
+              Hrvatski
+            </Link>
+          </li>
+        </ul>
+
+        <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <Link
               to={"https://www.linkedin.com/company/101435742"}
               target="_blank"
               rel="noreferrer"
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              className="text-sm text-gray-600 transition-colors duration-300 hover:text-[#FF4F01]"
             >
               LinkedIn
             </Link>
