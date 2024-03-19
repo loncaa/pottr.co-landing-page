@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://pottr.co</loc>
+		<loc>https://pottr.hr</loc>
 	</url>
 	<url>
-		<loc>https://pottr.co/about</loc>
+		<loc>https://pottr.hr/about</loc>
         <lastmod>2023-12-30T23:58:44.110Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
 	</url>
     <url>
-		<loc>https://pottr.co/contact</loc>
+		<loc>https://pottr.hr/contact</loc>
         <lastmod>2023-12-30T23:58:44.110Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>

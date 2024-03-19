@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pottr.co/sitemap.xml
+Sitemap: https://pottr.hr/sitemap.xml
