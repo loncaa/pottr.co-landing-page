@@ -10,24 +10,11 @@ export const people: TeamPersonInterface[] = [
     imageUrl: "/aloncar.jpg",
   },
   {
-    name: "Katarina Tokic",
-    role: "UI/UX Designer",
-    email: "antonio@pottr.co",
-    linkedinUrl: "https://www.linkedin.com/in/katarina-tokic/",
-    imageUrl: "/ktokic.jpg",
-  },
-  {
     name: "Branimir Hrženjak",
     role: "Digital Marketing Specialist",
     email: "antonio@pottr.co",
     linkedinUrl: "https://www.linkedin.com/in/branimir-hr%C5%BEenjak-616738127",
     imageUrl: "/branimir.jpg",
-  },
-  {
-    name: "Lucija Novak",
-    role: "UI/UX Designer",
-    email: "antonio@pottr.co",
-    imageUrl: "/lnovak.png",
   },
 ];
 
