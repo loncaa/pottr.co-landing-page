@@ -1,12 +1,11 @@
 export interface ShowcaseItemProps {
   title: string;
   description: string;
-  heroLinkUrl: string;
+  heroLinkUrl?: string;
 }
 export default function ShowcaseItem({
   title,
   description,
-  heroLinkUrl,
 }: ShowcaseItemProps) {
   return (
     <div className="relative items-center lg:inline-flex md:order-first">

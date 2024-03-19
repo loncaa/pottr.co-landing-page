@@ -1,0 +1,42 @@
+{
+  "services": {
+    "label": "services",
+    "list": [
+      {
+        "title": "Shopify Custom App Design & Development",
+        "description": "Tailor-made Shopify apps and extensions, designed to look pixel-perfect every time. Our dedicated team is here to deliver you the ideal e-commerce experience."
+      },
+      {
+        "title": "Shopify Custom Integration Development",
+        "description": "Custom Shopify integrations, created and integrated into your store by seasoned experts. We'll make sure that your e-commerce ecosystem functions in complete harmony."
+      },
+      {
+        "title": "Custom UI/UX Research and Design",
+        "description": "Research and design for your e-commerce project that's tailored to your business goals. Our team is ready to validate and build a design solution to delight your customers."
+      },
+      {
+        "title": "Website Copywriting and SEO",
+        "description": "All-inclusive website copywriting and SEO services for your e-commerce Shopify store. Let our experts guide and help craft messaging that converts customers at scale."
+      }
+    ]
+  },
+  "trustedBy": {
+    "label": "trusted by companies"
+  },
+  "team": {
+    "title": "meet the experts",
+    "label": "Team",
+    "description": "Our experience comes from a background of working on e-commerce solutions, and startups."
+  },
+  "technology": {
+    "title": "tech stack",
+    "label": "Technology",
+    "description": "Here are the main technologies used in our projects. Don't see your technologies listed here? No problem – we've got it covered!",
+    "contactUs": "contact us"
+  },
+  "chat": {
+    "title": "Looking for custom services?",
+    "label": "Get in touch directly and we'll set up a discovery workshop.",
+    "action": "let's chat"
+  }
+}

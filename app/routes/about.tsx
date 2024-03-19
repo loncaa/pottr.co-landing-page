@@ -4,6 +4,7 @@ import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
+import { label, description } from "../../public/locales/en/about.json";
 
 export const meta: MetaFunction = () => {
   return [
@@ -24,13 +25,11 @@ export default function Index() {
         <SectionWrapper>
           <div className="gap-x-8 gap-y-20 m-auto">
             <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
-              about
+              {label}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2">
               <p className="mt-6 text-lg leading-8 text-gray-600 col-span-1">
-                Pottr is a digital software agency, specializing in delivering
-                custom e-commerce solutions. Founded in 2023, its mission is to
-                create and deliver extraordinary products at scale.
+                {description}
               </p>
             </div>
           </div>

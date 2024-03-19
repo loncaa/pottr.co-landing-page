@@ -1,0 +1,19 @@
+{
+  "label": "get in touch!",
+  "description": "If you have questions about our expertise and skills, or if you're interested in exploring collaboration possibilities, feel free to send us a quick message. Our team of specialists is eager to bring your ideas to life.",
+  "form": {
+    "label": "What type of project do you have in mind?",
+    "optionDefault": "Choose a gig type",
+    "options": [
+      "Create an custom Shopify app",
+      "Create a custom Shopify integration",
+      "Work on a Node.js project",
+      "Create and MVP project",
+      "I'm not sure"
+    ],
+    "fullname": "Full name",
+    "email": "Email address",
+    "message": "Message",
+    "send": "send"
+  }
+}

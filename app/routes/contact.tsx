@@ -4,6 +4,7 @@ import ContactForm from "~/components/ContactForm";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
+import { label, description } from "../../public/locales/en/contact.json";
 
 export const meta: MetaFunction = () => {
   return [
@@ -26,13 +27,10 @@ export default function Contact() {
             <div className="gap-x-8 grid grid-cols-1 lg:grid-cols-2">
               <div className="col-span-1">
                 <h1 className="font-semibold tracking-tight text-[#FF4F01] text-lg mb-2 text-center md:text-left">
-                  get in touch!
+                  {label}
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  If you have questions about our expertise and skills, or if
-                  you're interested in exploring collaboration possibilities,
-                  feel free to send us a quick message. Our team of specialists
-                  is eager to bring your ideas to life.
+                  {description}
                 </p>
                 <p></p>
               </div>

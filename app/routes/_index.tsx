@@ -7,7 +7,6 @@ import LetsChat from "~/components/LetsChat";
 import LogoCloud from "~/components/LogoCloud";
 import SectionWrapper from "~/components/SectionWrapper";
 import Services from "~/components/Services";
-import TeamHero from "~/components/TeamHero";
 
 export const meta: MetaFunction = () => {
   return [
@@ -32,10 +31,6 @@ export default function Index() {
 
         <SectionWrapper>
           <LogoCloud />
-        </SectionWrapper>
-
-        <SectionWrapper>
-          <TeamHero />
         </SectionWrapper>
 
         <SectionWrapper>

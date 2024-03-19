@@ -1,3 +1,5 @@
+import { form } from "../../public/locales/en/contact.json";
+
 export default function ContactForm() {
   return (
     <form action="https://formsubmit.co/aloncar.mail@gmail.com" method="POST">
@@ -11,7 +13,7 @@ export default function ContactForm() {
                 htmlFor="project-type"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                What type of project do you have in mind?
+                {form.label}
               </label>
               <div className="mt-2">
                 <select
@@ -21,21 +23,13 @@ export default function ContactForm() {
                   className="block w-full bg-white border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6 sm:max-w-xs"
                 >
                   <option selected disabled={true} value={""}>
-                    Choose a gig type
+                    {form.optionDefault}
                   </option>
-                  <option value={"Create an custom Shopify app"}>
-                    Create an custom Shopify app
-                  </option>
-                  <option value={"Create a custom Shopify integration"}>
-                    Create a custom Shopify integration
-                  </option>
-                  <option value={"Work on a Node.js project"}>
-                    Work on a Node.js project
-                  </option>
-                  <option value={"Create and MVP project"}>
-                    Create and MVP project
-                  </option>
-                  <option value="I'm not sure">I'm not sure</option>
+                  {form.options.map((option) => (
+                    <option value={option} key={option}>
+                      {option}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
@@ -45,7 +39,7 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Full name
+                {form.fullname}
               </label>
               <div className="mt-2">
                 <input
@@ -64,7 +58,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Email address
+                {form.email}
               </label>
               <div className="mt-2">
                 <input
@@ -78,29 +72,12 @@ export default function ContactForm() {
               </div>
             </div>
 
-            <div className="col-span-full sm:col-span-3">
-              <label
-                htmlFor="budget"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Budget
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="budget"
-                  id="budget"
-                  className="block w-full border border-[#16161d]py-1.5 text-gray-900  focus:border-[#FF4F01] focus:outline-none focus:ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
             <div className="col-span-full">
               <label
                 htmlFor="message"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Message
+                {form.message}
               </label>
               <div className="mt-2">
                 <textarea
@@ -122,7 +99,7 @@ export default function ContactForm() {
           className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600"
           type="submit"
         >
-          <span>&nbsp;→&nbsp;→&nbsp;→&nbsp;send&nbsp;→</span>
+          <span>&nbsp;→&nbsp;→&nbsp;→&nbsp;{form.send}&nbsp;→</span>
         </button>
       </div>
     </form>
