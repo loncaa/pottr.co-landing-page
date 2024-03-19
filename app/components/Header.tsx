@@ -2,6 +2,8 @@ import { HomeIcon } from "@heroicons/react/16/solid";
 import { Link, useLocation } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
 
+import { description, menu } from "../../public/locales/hr/header.json";
+
 const buttonCss =
   "backdrop-blur-sm transition duration-500 ease-in-out translate-y-1 text-lg py-1 px-4 inline-flex items-center border border-[#FF4F01] bg-white  text-[#FF4F01] hover:bg-neutral-200 hover:border-[#FF4F01]";
 const selectedButtonCss =
@@ -49,14 +51,14 @@ export default function Header() {
 
         <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
           <button className={getButtonCss("/contact")}>
-            <span> contact</span>
+            <span> {menu.contact}</span>
           </button>
         </Link>
 
         <Link to={location.pathname == "/about" ? "/" : "/about"}>
           <button className={getButtonCss("/about")}>
             {" "}
-            <span>about</span>
+            <span>{menu.about}</span>
           </button>
         </Link>
       </div>
@@ -75,7 +77,7 @@ export default function Header() {
           </h1>
         </Link>
         <h1 className="relative mt-5 bg-clip-text text-[#201515] inline-block text-2xl">
-          custom e-commerce software solutions
+          {description}
         </h1>
       </div>
       <div
