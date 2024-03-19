@@ -1,0 +1,19 @@
+{
+  "url": "https://pottr.hr",
+  "root": {
+    "title": "Pottr.hr - Digitalna agencija za e-trgovinu",
+    "description": "Mala digitalna agencija za integraciju Shopify-a i razvoj prilagođenih aplikacija"
+  },
+  "home": {
+    "title": "Pottr.hr - Digitalna agencija za e-trgovinu",
+    "description": "Mala digitalna agencija za integraciju Shopify-a i razvoj prilagođenih aplikacija"
+  },
+  "about": {
+    "title": "Pottr.hr - O nama",
+    "description": "Upoznajte Pottr i tim posvećenih pojedinaca koji rade na isporuci izvanrednih softverskih rješenja."
+  },
+  "contact": {
+    "title": "Pottr.hr - Kontakt",
+    "description": "Stupite u kontakt s našim timom stručnjaka i zajedno stvorimo nešto izvanredno."
+  }
+}
