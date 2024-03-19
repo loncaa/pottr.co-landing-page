@@ -16,8 +16,6 @@ export default function Header() {
 
   const location = useLocation();
 
-  console.log(location);
-
   useEffect(() => {
     if (!divRef || !divRef.current) {
       return;
