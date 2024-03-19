@@ -14,7 +14,7 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import * as gtag from "./utils/gtag.client";
-import { url, root } from "../public/locales/en/meta.json";
+import { url, root } from "../public/locales/hr/meta.json";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
