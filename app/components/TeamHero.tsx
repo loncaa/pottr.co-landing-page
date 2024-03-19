@@ -20,7 +20,7 @@ export default function HeroHorizontal() {
 
         <div className="relative flex-col items-start sm:m-auto align-middle grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-4">
           {people.map((person) => (
-            <TeamPerson key={person.linkedinUrl} person={person} />
+            <TeamPerson key={person.name} person={person} />
           ))}
         </div>
       </div>
