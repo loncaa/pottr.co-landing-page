@@ -14,6 +14,7 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import * as gtag from "./utils/gtag.client";
+import { url, root } from "../public/locales/en/meta.json";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -53,21 +54,15 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://pottr.co" />
-        <meta property="og:title" content="Pottr.co - Digital agency" />
-        <meta
-          property="og:description"
-          content="A small digital agency for Shopify integration and custom app development"
-        />
-        <meta property="og:image" content="https://pottr.co/preview.png" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={root.title} />
+        <meta property="og:description" content={root.description} />
+        <meta property="og:image" content={`${url}/preview.png`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://pottr.co" />
-        <meta name="twitter:title" content="Pottr.co - Digital agency" />
-        <meta
-          name="twitter:description"
-          content="A small digital agency for Shopify integration and custom app development"
-        />
-        <meta name="twitter:image" content="https://pottr.co/preview.png" />
+        <meta name="twitter:url" content={url} />
+        <meta name="twitter:title" content={root.title} />
+        <meta name="twitter:description" content={root.description} />
+        <meta name="twitter:image" content={`${url}/preview.png`} />
         <Meta />
         <Links />
       </head>

@@ -4,15 +4,16 @@ import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
+
 import { label, description } from "../../public/locales/en/about.json";
+import { about } from "../../public/locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - About" },
+    { title: about.title },
     {
       name: "description",
-      content:
-        "Get to know pottr and the team of dedicated individuals working to deliver awesome software solutions.",
+      content: about.description,
     },
   ];
 };

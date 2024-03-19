@@ -1,0 +1,19 @@
+{
+  "url": "https://pottr.co",
+  "root": {
+    "title": "Pottr.co - Digital e-commerce agency",
+    "description": "A small digital agency for Shopify integration and custom app development"
+  },
+  "home": {
+    "title": "Pottr.co - Digital e-commerce agency",
+    "description": "A small digital agency for Shopify integration and custom app development"
+  },
+  "about": {
+    "title": "Pottr.co - About",
+    "description": "Get to know pottr and the team of dedicated individuals working to deliver awesome software solutions."
+  },
+  "contact": {
+    "title": "Pottr.co - Contact",
+    "description": "Get in touch with our team of experts and let’s create something extraordinary together."
+  }
+}

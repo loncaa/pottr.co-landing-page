@@ -7,14 +7,14 @@ import LetsChat from "~/components/LetsChat";
 import LogoCloud from "~/components/LogoCloud";
 import SectionWrapper from "~/components/SectionWrapper";
 import Services from "~/components/Services";
+import { home } from "../../public/locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - Digital e-commerce agency" },
+    { title: home.title },
     {
       name: "description",
-      content:
-        "E-commerce digital agency focusing on Shopify integration and custom app development.",
+      content: home.description,
     },
   ];
 };

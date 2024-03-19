@@ -5,14 +5,14 @@ import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import { label, description } from "../../public/locales/en/contact.json";
+import { contact } from "../../public/locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Pottr.co - Contact" },
+    { title: contact.title },
     {
       name: "description",
-      content:
-        "Get in touch with our team of experts and let’s create something extraordinary together.",
+      content: contact.description,
     },
   ];
 };
