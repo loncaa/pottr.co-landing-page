@@ -2,7 +2,7 @@ import { HomeIcon } from "@heroicons/react/16/solid";
 import { Link, useLocation } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
 
-import { description, menu } from "../../public/locales/hr/header.json";
+import { description, menu } from "../../public/locales/en/header.json";
 
 const buttonCss =
   "backdrop-blur-sm transition duration-500 ease-in-out translate-y-1 text-lg py-1 px-4 inline-flex items-center border border-[#FF4F01] bg-white  text-[#FF4F01] hover:bg-neutral-200 hover:border-[#FF4F01]";

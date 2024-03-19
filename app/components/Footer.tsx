@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 
-import { language } from "../../public/locales/hr/footer.json";
+import { language } from "../../public/locales/en/footer.json";
 
 export default function Footer() {
   return (
