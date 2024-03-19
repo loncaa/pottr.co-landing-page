@@ -1,9 +1,14 @@
 import { form } from "../../public/locales/en/contact.json";
+import { url } from "../../public/locales/en/meta.json";
 
 export default function ContactForm() {
   return (
     <form action="https://formsubmit.co/aloncar.mail@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Pottr.co submission!" />
+      <input
+        type="hidden"
+        name="_subject"
+        value={`New submission from ${url.replace(/(^\w+:|^)\/\//, "")}!`}
+      />
       <input type="hidden" name="_captcha" value="true"></input>
       <div className="space-y-12">
         <div className="pb-12">
