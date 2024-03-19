@@ -1,6 +1,6 @@
 import TeamPerson from "./TeamPerson";
 import { people } from "./Team";
-import { team } from "../../public/locales/en/home.json";
+import { team } from "../../public/locales/hr/home.json";
 
 export default function HeroHorizontal() {
   return (

@@ -1,0 +1,19 @@
+{
+  "label": "Stupite u kontakt!",
+  "description": "Ako imate pitanja o našem stručnom znanju i vještinama, ili ako vas zanima istraživanje mogućnosti suradnje, slobodno nam pošaljite brzu poruku. Naš tim stručnjaka željno iščekuje da vaše ideje pretvori u stvarnost.",
+  "form": {
+    "label": "Kakav projekt imate na umu?",
+    "optionDefault": "Odaberite vrstu projekta",
+    "options": [
+      "Stvaranje prilagođene Shopify aplikacije",
+      "Stvaranje prilagođene Shopify integracije",
+      "Rad na projektu s Node.js",
+      "Stvaranje MVP projekta",
+      "Nisam siguran/sigurna"
+    ],
+    "fullname": "Ime i prezime",
+    "email": "Adresa e-pošte",
+    "message": "Poruka",
+    "send": "pošalji"
+  }
+}

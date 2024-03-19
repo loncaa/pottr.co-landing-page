@@ -1,4 +1,4 @@
-import { form } from "../../public/locales/en/contact.json";
+import { form } from "../../public/locales/hr/contact.json";
 
 export default function ContactForm() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { chat } from "../../public/locales/en/home.json";
+import { chat } from "../../public/locales/hr/home.json";
 
 export default function LetsChat() {
   return (

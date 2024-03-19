@@ -1,5 +1,5 @@
 import TeamPerson, { TeamPersonInterface } from "./TeamPerson";
-import { team } from "../../public/locales/en/about.json";
+import { team } from "../../public/locales/hr/about.json";
 
 export const people: TeamPersonInterface[] = [
   {

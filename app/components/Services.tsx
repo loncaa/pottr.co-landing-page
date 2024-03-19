@@ -1,5 +1,5 @@
 import ShowcaseItem from "./ShowcaseItem";
-import { services } from "../../public/locales/en/home.json";
+import { services } from "../../public/locales/hr/home.json";
 
 export default function Services() {
   return (

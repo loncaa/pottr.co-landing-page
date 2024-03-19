@@ -1,0 +1,42 @@
+{
+  "services": {
+    "label": "usluge",
+    "list": [
+      {
+        "title": "Dizajn i razvoj prilagođene Shopify aplikacije",
+        "description": "Prilagođene Shopify aplikacije i proširenja, dizajnirane da izgledaju savršeno svaki put. Naš posvećeni tim ovdje je kako bi vam pružio idealno iskustvo elektroničke trgovine."
+      },
+      {
+        "title": "Razvoj prilagođene integracije za Shopify",
+        "description": "Prilagođene Shopify integracije, izrađene i integrirane u vašu trgovinu od strane iskusnih stručnjaka. Osigurat ćemo da vaš e-trgovinski ekosustav funkcionira u potpunom skladu."
+      },
+      {
+        "title": "Prilagođeno istraživanje i dizajn UI/UX",
+        "description": "Istraživanje i dizajn za vaš e-trgovinski projekt prilagođen vašim poslovnim ciljevima. Naš tim je spreman validirati i izgraditi dizajnersko rješenje koje će oduševiti vaše kupce."
+      },
+      {
+        "title": "Pisanje web stranica i SEO",
+        "description": "Sveobuhvatne usluge pisanja web stranica i SEO-a za vašu e-trgovinsku Shopify trgovinu. Dopustite našim stručnjacima da vas vode i pomognu oblikovati poruke koje pretvaraju kupce u velikom opsegu."
+      }
+    ]
+  },
+  "trustedBy": {
+    "label": "dosadašnje ostvarane suradnje"
+  },
+  "team": {
+    "title": "upoznajte stručnjake",
+    "label": "Tim",
+    "description": "Naše iskustvo dolazi iz pozadine rada na rješenjima za e-trgovinu i startupima."
+  },
+  "technology": {
+    "title": "tech stack",
+    "label": "Tehnologija",
+    "description": "Evo glavnih tehnologija korištenih u našim projektima. Ne vidite svoje tehnologije ovdje? Nema problema - pokrili smo sve!",
+    "contactUs": "kontaktirajte nas"
+  },
+  "chat": {
+    "title": "Tražite prilagođene usluge?",
+    "label": "Obratite nam se izravno i organizirat ćemo radionicu za istraživanje.",
+    "action": "razgovarajmo"
+  }
+}

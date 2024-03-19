@@ -4,9 +4,8 @@ import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
-
-import { label, description } from "../../public/locales/en/about.json";
-import { about } from "../../public/locales/en/meta.json";
+import { label, description } from "../../public/locales/hr/about.json";
+import { about } from "../../public/locales/hr/meta.json";
 
 export const meta: MetaFunction = () => {
   return [

@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { technology } from "../../public/locales/en/home.json";
+import { technology } from "../../public/locales/hr/home.json";
 
 export default function HeroHorizontal() {
   return (

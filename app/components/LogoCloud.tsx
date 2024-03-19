@@ -1,4 +1,4 @@
-import { trustedBy } from "../../public/locales/en/home.json";
+import { trustedBy } from "../../public/locales/hr/home.json";
 
 export default function LogoCloud() {
   return (
