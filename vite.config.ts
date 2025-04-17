@@ -2,8 +2,12 @@ import {
   vitePlugin as remix,
   cloudflareDevProxyVitePlugin as remixCloudflareDevProxy,
 } from "@remix-run/dev";
+import mdx from "@mdx-js/rollup";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import rehypePrettyCode from "rehype-pretty-code";
 
 declare module "@remix-run/cloudflare" {
   interface Future {
@@ -13,6 +17,11 @@ declare module "@remix-run/cloudflare" {
 
 export default defineConfig({
   plugins: [
+    tsconfigPaths(),
+    mdx({
+      remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
+      rehypePlugins: [rehypePrettyCode],
+    }),
     remixCloudflareDevProxy(),
     remix({
       future: {
@@ -23,7 +32,6 @@ export default defineConfig({
         v3_lazyRouteDiscovery: true,
       },
     }),
-    tsconfigPaths(),
   ],
 });
 

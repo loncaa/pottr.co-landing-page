@@ -13,3 +13,9 @@ declare module "@remix-run/server-runtime" {
         };
     }
 }
+
+declare module "*.mdx" {
+    let MDXComponent: (props) => JSX.Element;
+    export const frontmatter;
+    export default MDXComponent;
+}

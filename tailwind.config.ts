@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+  content: ["./app/**/{**,.client,.server}/**/*.{ts,tsx,mdx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -18,5 +18,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), require('@tailwindcss/typography')],
 } satisfies Config;
