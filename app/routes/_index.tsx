@@ -7,7 +7,7 @@ import LetsChat from "~/components/LetsChat";
 import LogoCloud from "~/components/LogoCloud";
 import SectionWrapper from "~/components/SectionWrapper";
 import Services from "~/components/Services";
-import { home } from "../../public/locales/en/meta.json";
+import { home } from "~/locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [

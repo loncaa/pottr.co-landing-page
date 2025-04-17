@@ -5,8 +5,8 @@ import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
 
-import { label, description } from "../../public/locales/en/about.json";
-import { about } from "../../public/locales/en/meta.json";
+import { label, description } from "~/locales/en/about.json";
+import { about } from "~/locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [
