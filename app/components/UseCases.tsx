@@ -14,14 +14,16 @@ export default function UseCases({ posts }: UseCasesProps) {
             </h2>
 
             <div className="justify-between align-baseline flex-col grid grid-cols-1 md:grid-cols-3 gap-12">
-                {posts.map((post, index) => {
+                {posts.slice(0, 3).map((post, index) => {
                     return (
                         <div key={index}>
-                            <img
-                                className="w-full object-contain col-span-1"
-                                src={`${post.thumbnail}`}
-                                alt={`${post.title}`}
-                            />
+                            <div className="w-full h-[200px] overflow-hidden rounded-md">
+                                <img
+                                    className="w-full object-contain col-span-1"
+                                    src={`${post.thumbnail}`}
+                                    alt={`${post.title}`}
+                                />
+                            </div>
                             <h2 className="mb-4 mt-6 font-sans text-xl font-bold leading-[1.3] md:text-3xl hover:text-[#FF4F01] focus:outline-none focus-visible:outline-gray-600">
                                 <Link prefetch="intent" to={`/blog/${post.slug}`}>
                                     {post.title}
