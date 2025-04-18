@@ -13,7 +13,7 @@ export default function Hero() {
                 </h1>
                 <h4 className="max-w-xl text-base tracking-tight text-gray-600 mt-4">
                   This are main technologies used in our projects. Some of your
-                  technologies are not listed here? It's not a problem, we can
+                  technologies are not listed here? It&apos;s not a problem, we can
                   do it!
                 </h4>
                 <div className="lg:flex justify-center gap-3 mt-3 lg:justify-start">

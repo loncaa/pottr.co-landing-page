@@ -38,5 +38,9 @@
     "title": "Looking for custom services?",
     "label": "Get in touch directly and we'll set up a discovery workshop.",
     "action": "let's chat"
+  },
+  "usecases": {
+    "label": "use cases",
+    "readMore": "read more..."
   }
 }

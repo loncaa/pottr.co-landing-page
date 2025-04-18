@@ -26,7 +26,7 @@ export default function BlogLayout() {
         {currentPost ? (
           <header className="text-center">
             <p
-              className="my-10 font-sans font-semibold uppercase text-text-secondary dark:text-d-text-secondary"
+              className="my-10 font-sans font-semibold uppercase text-text-secondary"
             >
               {currentPost.publishDate} ~ {currentPost.readingTime} read
             </p>
@@ -41,7 +41,7 @@ export default function BlogLayout() {
         )}
 
         <SectionWrapper>
-          <div className="prose max-w-none w-screen py-[1em] px-[2em] dark:prose-invert  md:prose-lg lg:prose-xl prose-headings:text-text-primary prose-a:no-underline prose-pre:p-0 dark:prose-headings:text-d-text-primary">
+          <div className="prose max-w-none w-screen py-[1em] px-[2em] md:prose-lg lg:prose-xl prose-headings:text-text-primary prose-a:no-underline prose-pre:p-0">
             <Outlet />
           </div>
         </SectionWrapper>

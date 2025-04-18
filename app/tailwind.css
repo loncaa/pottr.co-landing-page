@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @plugin "@tailwindcss/typography";
+
+pre {
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+pre [data-line] {
+  padding: 0 1rem;
+}
