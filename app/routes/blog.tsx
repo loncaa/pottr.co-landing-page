@@ -26,7 +26,7 @@ export default function Blog() {
                 <div key={index}>
                   {index !== 0 && <hr className="mx-auto my-[60px]" />}
 
-                  <h2 className=" mb-4 mt-6 font-sans text-xl font-bold leading-[1.3] md:text-3xl">
+                  <h2 className=" mb-4 mt-6 font-sans text-xl font-bold leading-[1.3] md:text-3xl hover:text-[#FF4F01]">
                     <Link prefetch="intent" to={post.slug}>
                       {post.title}
                     </Link>

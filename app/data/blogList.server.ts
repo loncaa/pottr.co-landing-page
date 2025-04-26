@@ -11,21 +11,21 @@ export interface BlogList {
 
 export const blogList: Array<BlogList> = [
   {
-    slug: "hello-world", // Filename
-    title: "Hello World 👋",
-    publishDate: "30 Nov 2021",
+    slug: "shopify-checkout-extension", // Filename
+    title: "Shopify Checkout Upsell Extension",
+    publishDate: "26 Apr 2025",
     description:
-      "Every blog starts with a single post. This is yours. Make it great.",
-    pathName: "/blog/hello-world",
-    readingTime: "1 min",
-    thumbnail: '/assets/images/casual-life-3d-likes.webp'
+      "Every blog starts with a single post. This is yours. Make it great. Use it as a starting point for applying your own styles.",
+    pathName: "/blog/shopify-checkout-extension",
+    readingTime: "2 min",
+    thumbnail: '/assets/images/casual-life-3d-meditation-crystal.webp'
   },
   {
     slug: "markdown-test",
     title: "Markdown Test Page",
     publishDate: "01 Dec 2021",
     description:
-      "A sample page with the most common elements of an article, including headings, paragraphs, lists, and images. Use it as a starting point for applying your own styles.",
+      "A sample page with the most common elements of an article, including headings, paragraphs, lists, and images..",
     pathName: "/blog/markdown-test",
     readingTime: "5 min",
     thumbnail: '/assets/images/casual-life-3d-workspace.webp'

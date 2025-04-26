@@ -1,9 +1,9 @@
+import { ArrowLeftIcon } from "@heroicons/react/16/solid";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Outlet, useLoaderData } from "@remix-run/react";
 import BodyContent from "~/components/BodyContent";
 import Footer from "~/components/Footer";
-import SectionWrapper from "~/components/SectionWrapper";
 import type { BlogList } from "~/data/blogList.server";
 import { blogList } from "~/data/blogList.server";
 
@@ -22,31 +22,32 @@ export default function BlogLayout() {
 
   return (
     <>
-      <BodyContent>
-        {currentPost ? (
-          <header className="text-center">
-            <p
-              className="my-10 font-sans font-semibold uppercase text-text-secondary"
-            >
-              {currentPost.publishDate} ~ {currentPost.readingTime} read
-            </p>
-            <h1
-              className="mb-20 text-4xl font-bold leading-[1.3] md:text-6xl"
-            >
-              {currentPost.title}
-            </h1>
-          </header>
-        ) : (
-          <></>
-        )}
-
-        <SectionWrapper>
-          <div className="prose max-w-none w-screen py-[1em] px-[2em] md:prose-lg lg:prose-xl prose-headings:text-text-primary prose-a:no-underline prose-pre:p-0">
+      <main className="px-5">
+        <section className="sm:px-28">
+          <div
+            className="pt-8 lg:pt-16 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg"
+          >
+            {currentPost ? (
+              <>
+                <div className="inline-flex text-gray-900 items-center">
+                  <a href="/blog" className="hover:text-[#FF4F01]"><ArrowLeftIcon className="mr-4 w-8 h-8" /></a>
+                  <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">{currentPost.title}</h1>
+                </div>
+                <p className="font-sans text-text-secondary ml-12">
+                  {currentPost.publishDate} ~ {currentPost.readingTime} read
+                </p>
+              </>
+            ) : (
+              <></>
+            )}
+          </div>
+        </section>
+        <BodyContent>
+          <div className="prose mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg">
             <Outlet />
           </div>
-        </SectionWrapper>
-      </BodyContent >
-
+        </BodyContent >
+      </main>
       <Footer />
     </>
   );

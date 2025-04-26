@@ -19,7 +19,7 @@ export default function UseCases({ posts }: UseCasesProps) {
                         <div key={index}>
                             <div className="w-full h-[200px] overflow-hidden rounded-md">
                                 <img
-                                    className="w-full object-contain col-span-1"
+                                    className="w-full h-full object-contain col-span-1"
                                     src={`${post.thumbnail}`}
                                     alt={`${post.title}`}
                                 />
