@@ -40,7 +40,7 @@
     "action": "let's chat"
   },
   "usecases": {
-    "label": "highlighted",
+    "label": "usecases",
     "readMore": "read more..."
   }
 }

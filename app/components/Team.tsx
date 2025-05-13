@@ -16,6 +16,20 @@ export const people: TeamPersonInterface[] = [
     linkedinUrl: "https://www.linkedin.com/in/branimir-hr%C5%BEenjak-616738127",
     imageUrl: "/branimir.jpg",
   },
+  {
+    name: "Ozren Klančir",
+    role: "Senior Frontend Engineer",
+    email: "antonio@pottr.co",
+    linkedinUrl: "https://www.linkedin.com/in/oklancir/",
+    imageUrl: "/ozren.jpg",
+  },
+  {
+    name: "Kristijan Štokan",
+    role: "Data Analyst Specialist",
+    email: "antonio@pottr.co",
+    linkedinUrl: "https://www.linkedin.com/in/kristijan-s-7b3513269/",
+    imageUrl: "/kiso.jpg",
+  },
 ];
 
 export default function Team() {
