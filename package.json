@@ -16,11 +16,11 @@
     "login": "wrangler login"
   },
   "dependencies": {
-    "@heroicons/react": "^2.2.0",
-    "@remix-run/cloudflare": "^2.16.5",
-    "@remix-run/cloudflare-pages": "^2.16.5",
-    "@remix-run/css-bundle": "^2.16.5",
-    "@remix-run/react": "^2.16.5",
+    "@heroicons/react": "^2.1.1",
+    "@remix-run/cloudflare": "2.5.0",
+    "@remix-run/cloudflare-pages": "2.5.0",
+    "@remix-run/css-bundle": "2.5.0",
+    "@remix-run/react": "2.5.0",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.16",
     "isbot": "^4.1.0",
