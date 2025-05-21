@@ -9,6 +9,9 @@
 	"pages_build_output_dir": "./build/client",
 	"observability": {
 		"enabled": true
+	},
+	"vars": {
+		"GA_TRACKING_ID": "G-QVV59VLN23"
 	}
 	/**
 	 * Smart Placement
