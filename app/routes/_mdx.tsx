@@ -1,6 +1,6 @@
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
-import type { LoaderFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
 import { Outlet, useLoaderData } from "@remix-run/react";
 import BodyContent from "~/components/BodyContent";
 import ContactForm from "~/components/ContactForm";
