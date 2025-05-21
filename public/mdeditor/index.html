@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quill Editor with Resizable Images and Markdown Export</title>
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <style>
+    #editor-container {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>WYSIWYG Editor → Markdown (.md)</h2>
+
+  <!-- Toolbar -->
+  <div id="toolbar">
+    <select class="ql-header">
+      <option value="1"></option>
+      <option value="2"></option>
+      <option selected></option>
+    </select>
+    <button class="ql-bold"></button>
+    <button class="ql-italic"></button>
+    <button class="ql-underline"></button>
+    <button class="ql-list" value="ordered"></button>
+    <button class="ql-list" value="bullet"></button>
+    <button class="ql-link"></button>
+    <button class="ql-image"></button>
+    <button class="ql-code-block"></button>
+    <button class="ql-blockquote"></button>
+    <button class="ql-clean"></button>
+  </div>
+
+  <!-- Editor -->
+  <div id="editor-container"></div>
+
+  <!-- Download Button -->
+  <button onclick="downloadMarkdown()">Download as .md</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quill-image-resize-module@3.0.0/image-resize.min.js"></script>
+
+  <script>
+    // Fix: quill-image-resize-module exports a class as default
+    Quill.register('modules/imageResize', window.ImageResize.default);
+
+    const quill = new Quill('#editor-container', {
+      theme: 'snow',
+      modules: {
+        toolbar: '#toolbar',
+        imageResize: {}
+      }
+    });
+
+    function downloadMarkdown() {
+      const html = quill.root.innerHTML;
+
+      const turndownService = new TurndownService({
+        headingStyle: 'atx',
+        codeBlockStyle: 'fenced'
+      });
+
+      // Convert <img> to markdown image
+      turndownService.addRule('image', {
+        filter: 'img',
+        replacement: function (content, node) {
+          const alt = node.getAttribute('alt') || '';
+          const src = node.getAttribute('src') || '';
+          return `![${alt}](${src})`;
+        }
+      });
+
+      const markdown = turndownService.turndown(html);
+      const blob = new Blob([markdown], { type: 'text/markdown' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'document.md';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+
+</body>
+</html>
