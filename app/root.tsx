@@ -16,7 +16,10 @@ import * as gtag from "./utils/gtag.client";
 import { url, root } from "./locales/en/meta.json";
 
 // Load the GA tracking id from the .env
-export const loader = async ({ context }: LoaderFunctionArgs) => {
+export const loader = async (args: LoaderFunctionArgs) => {
+  const { context } = args;
+  console.log('args', args, context?.cloudflare?.env);
+
   return json({
     ENV: {
       gaTrackingId: context.cloudflare.env.GA_TRACKING_ID,

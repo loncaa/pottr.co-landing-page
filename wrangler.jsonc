@@ -10,9 +10,6 @@
 	"observability": {
 		"enabled": true
 	},
-	"vars": {
-		"GA_TRACKING_ID": "G-QVV59VLN23"
-	}
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

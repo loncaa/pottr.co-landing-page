@@ -13,7 +13,8 @@
     "typegen": "wrangler types",
     "preview": "npm run build && wrangler pages dev",
     "cf-typegen": "wrangler types",
-    "login": "wrangler login"
+    "login": "wrangler login",
+    "watch": "wrangler watch"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -53,7 +54,7 @@
     "typescript": "^5.1.0",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^3.28.2"
+    "wrangler": "^4.16.1"
   },
   "engines": {
     "node": ">=20.0.0"

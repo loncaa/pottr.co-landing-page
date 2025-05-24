@@ -17,12 +17,12 @@ declare module "@remix-run/cloudflare" {
 
 export default defineConfig({
   plugins: [
+    remixCloudflareDevProxy(),
     tsconfigPaths(),
     mdx({
       remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
       rehypePlugins: [rehypePrettyCode],
     }),
-    remixCloudflareDevProxy(),
     remix({
       future: {
         v3_fetcherPersist: true,
