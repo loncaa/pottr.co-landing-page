@@ -5,11 +5,11 @@
     "label": "What type of project do you have in mind?",
     "optionDefault": "Choose a gig type",
     "options": [
-      "Create an custom Shopify app",
-      "Create a custom Shopify integration",
+      "Create an MVP project",
       "Work on a Node.js project",
-      "Create and MVP project",
-      "Other"
+      "Create a custom Shopify app",
+      "Create a custom Shopify integration",
+      "Other - write us more details in the message"
     ],
     "fullname": "Full name",
     "email": "Email address",

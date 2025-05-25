@@ -19,7 +19,6 @@ export const loader: LoaderFunction = async ({ request }) => {
   return json(currentPost);
 };
 
-
 export default function BlogLayout() {
   const currentPost = useLoaderData<BlogList>();
 
