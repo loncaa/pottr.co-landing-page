@@ -4,5 +4,8 @@
   "team": {
     "label": "Meet the team",
     "description": "We're a multi-disciplinary team of individuals from Croatia with a passion for creativity, problem-solving, and innovation."
+  },
+  "location": {
+    "label": "We are here"
   }
 }

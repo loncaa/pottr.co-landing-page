@@ -24,7 +24,9 @@
     "@remix-run/react": "^2.16.6",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/maplibre-gl": "^1.13.2",
     "isbot": "^4.1.0",
+    "maplibre-gl": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

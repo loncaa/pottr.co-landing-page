@@ -4,6 +4,7 @@ import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import Team from "~/components/Team";
+import Location from "~/components/Location";
 
 import { label, description } from "~/locales/en/about.json";
 import { about } from "~/locales/en/meta.json";
@@ -38,6 +39,10 @@ export default function Index() {
 
         <SectionWrapper>
           <Team />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Location />
         </SectionWrapper>
       </BodyContent>
 
