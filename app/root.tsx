@@ -18,7 +18,6 @@ import { url, root } from "./locales/en/meta.json";
 // Load the GA tracking id from the .env
 export const loader = async (args: LoaderFunctionArgs) => {
   const { context } = args;
-  console.log('args', args, context?.cloudflare?.env);
 
   return json({
     ENV: {

@@ -49,16 +49,16 @@ export default function Header() {
           </button>
         </Link>
 
-        <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
-          <button className={getButtonCss("/contact")}>
-            <span> {menu.contact}</span>
-          </button>
-        </Link>
-
         <Link to={location.pathname == "/about" ? "/" : "/about"}>
           <button className={getButtonCss("/about")}>
             {" "}
             <span>{menu.about}</span>
+          </button>
+        </Link>
+
+        <Link to={location.pathname == "/contact" ? "/" : "/contact"}>
+          <button className={getButtonCss("/contact")}>
+            <span> {menu.contact}</span>
           </button>
         </Link>
       </div>
