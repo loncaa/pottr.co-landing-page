@@ -1,6 +1,5 @@
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
-import stylesheet from "~/tailwind.css";
-import { cssBundleHref } from "@remix-run/css-bundle";
+import type { LoaderFunctionArgs } from "@remix-run/cloudflare";
+import "./tailwind.css";
 import {
   Links,
   LiveReload,
@@ -14,19 +13,16 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import * as gtag from "./utils/gtag.client";
-import { url, root } from "../public/locales/en/meta.json";
-
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-  { rel: "stylesheet", href: stylesheet },
-];
+import { url, root } from "./locales/en/meta.json";
 
 // Load the GA tracking id from the .env
-export const loader = async ({ context }: LoaderFunctionArgs) => {
+export const loader = async (args: LoaderFunctionArgs) => {
+  const { context } = args;
+
   return json({
     ENV: {
-      gaTrackingId: context.env.GA_TRACKING_ID,
-      isDevelopment: context.env.NODE_ENV === "development",
+      gaTrackingId: context.cloudflare.env.GA_TRACKING_ID,
+      isDevelopment: context.cloudflare.env.NODE_ENV === "development",
     },
   });
 };

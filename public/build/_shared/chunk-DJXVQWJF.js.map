@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/locales/en/meta.json"],
+  "sourcesContent": ["{\n  \"url\": \"https://pottr.co\",\n  \"root\": {\n    \"title\": \"Pottr.co - Digital agency\",\n    \"description\": \"A small digital agency for e-commerce integration and custom app development\"\n  },\n  \"home\": {\n    \"title\": \"Pottr.co - Digital agency\",\n    \"description\": \"A small digital agency for e-commerce integration and custom app development\"\n  },\n  \"about\": {\n    \"title\": \"Pottr.co - About\",\n    \"description\": \"Get to know pottr and the team of dedicated individuals working to deliver awesome software solutions.\"\n  },\n  \"contact\": {\n    \"title\": \"Pottr.co - Contact\",\n    \"description\": \"Get in touch with our team of experts and let\u2019s create something extraordinary together.\"\n  }\n}\n"],
+  "mappings": ";AACE,UAAO;AACP,WAAQ;AAAA,EACN,OAAS;AAAA,EACT,aAAe;AACjB;AACA,WAAQ;AAAA,EACN,OAAS;AAAA,EACT,aAAe;AACjB;AACA,YAAS;AAAA,EACP,OAAS;AAAA,EACT,aAAe;AACjB;AACA,cAAW;AAAA,EACT,OAAS;AAAA,EACT,aAAe;AACjB;",
+  "names": []
+}

@@ -4,8 +4,8 @@ import ContactForm from "~/components/ContactForm";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
-import { label, description } from "../../public/locales/en/contact.json";
-import { contact } from "../../public/locales/en/meta.json";
+import { label, description } from "../locales/en/contact.json";
+import { contact } from "../locales/en/meta.json";
 
 export const meta: MetaFunction = () => {
   return [
